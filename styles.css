@@ -1,7 +1,7 @@
 /*all the stuff applicable to all similar items on here*/
-img {
-    width: 50px;
-    height: 50px;
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 ul {
@@ -21,21 +21,22 @@ li {
 }
 
 button {
-    background-color: #3882F6;
+    background-color: #9f00e3;
     color: #EEEEEE;
     border-radius: 10px;
     width: 100px;
     height: 30px;
+    flex: 1;
 }
 /* ^^^ Try not to change this stuff, keep constant ^^^ */
 
 
 .header {
     display: flex;
-    height: 70px;
-    background-color: #006aff;
+    height: 100px;
+    background-color: #540000;
     font-size: 24px;
-    color: #F9FAF8;
+    color: #ffc800;
     flex-shrink: 0;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +47,7 @@ button {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    margin-left: 10px;
+    padding: 10px;
 }
 
 /* ^^^^^^ */
@@ -57,10 +58,17 @@ button {
 
 .firstcontent {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 300px;
-    background-color: #1F2937;
+    min-height: 300px;
+    background-color: #c50000;
+    flex-wrap: wrap;
+}
+
+.firstcontent img {
+    width: 400px;
+    height: 200px;
+    
 }
 
 .textside {
@@ -86,21 +94,14 @@ button {
 
 }
 
-.firstcontentimage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 100px;
-    padding: 50px;
-}
+
 
 /* ^^^^^^ ^^^^^^ ^^^^^^ ^^^^^^ ^^^^^^ ^^^^^^ */
 
 .secondcontainer {
     display: flex;
     flex-direction: column;
-    background-color: #EEEEEE;
+    background-color: #ff5d1d;
     text-align: center;
 }
 
@@ -108,10 +109,18 @@ button {
     display: flex;
     justify-content: space-around;
     height: 300px;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 10px;
     align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.titletext2 {
+.secondcontent img {
+    border-radius: 10px;
+    border: 10px;
+    border-color: #9f00e3;
+    border-style: solid;
     margin: 10px;
 }
 
@@ -124,10 +133,13 @@ button {
 
 /* ^^^^^^ ^^^^^^ ^^^^^^ ^^^^^^ ^^^^^^ ^^^^^^ */
 
-.thirdcontent {
+.thirdcontainer {
     display: flex;
-    height: 300px;
-    background-color: #E5E7EB;
+    background-color: #ffa217;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+    
     
 }
 
@@ -135,23 +147,30 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     padding: 20px;
+    flex: 1;
+    
 }
 
 .quote {
     display: flex;
     text-align: left;
-    width: 800px;
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
+    flex-wrap: wrap;
+    
+    
 
 }
 
 .authorquote {
     color: #1F2937;
-    font-weight: 200px;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 600;
+
 
 }
 
@@ -159,7 +178,7 @@ button {
 
 .fourthcontainer {
     display: flex;
-    background-color: #EEEEEE;
+    background-color: #ffde0a;
     height: 300px;
     justify-content: space-around;
     align-items: center;
@@ -176,20 +195,21 @@ button {
 .fourthinnerblue {
     display: flex;
     flex-direction: row;
-    background-color: #3882F6;
-    width: 800px;
-    height: 100px;
+    background-color: #ff5d1d;
     justify-content: space-around;
     align-items: center;
-    
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .innerbluepieces {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
+    margin: 15px;
+    
     
 }
 
@@ -204,8 +224,8 @@ button {
 .footer {
     display: flex;
     height: 60px;
-    background-color: #1F2937;
-    color: #F9FAF8;
+    background-color: #fff67c;
+    color: #300000;
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
